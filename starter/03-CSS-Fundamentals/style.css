@@ -1,4 +1,19 @@
-h1,
+/* The universal selector */
+/* * {
+	border-top: 10px solid #1098ad;
+} */
+
+/* The color property is inherited to all of the elements
+inside of the body, but it is overwritten for the elements
+in the body that also have a "color" property defined. */
+body {
+	font-family: sans-serif;
+	color: #444;
+	/* This does not get inherited */
+	border-top: 10px solid #1098ad;
+}
+
+/* h1,
 h2,
 h3,
 h4,
@@ -6,7 +21,7 @@ p,
 li {
 	font-family: sans-serif;
 	color: #444;
-}
+} */
 
 h1,
 h2,
