@@ -40,7 +40,8 @@
 				margin: 40px;
 
 				/* CSS GRID */
-				display: grid;
+				/* display: grid; */
+				display: none;
 				/* The sum of frs gives 5, and 2 of those go to the first column */
 				/* grid-template-columns: 1fr 1fr 1fr auto; */
 				grid-template-columns: repeat(4, 1fr);
@@ -69,17 +70,33 @@
 			} */
 
 			.container--2 {
-				display: none;
+				display: grid;
 				/* STARTER */
 				font-family: sans-serif;
 				background-color: black;
 				font-size: 40px;
-				margin: 100px;
+				margin: 40px;
 
-				width: 1000px;
+				width: 700px;
 				height: 600px;
 
 				/* CSS GRID */
+				grid-template-columns: 125px 200px 125px;
+				grid-template-rows: 250px 100px;
+				gap: 50px;
+
+				/* Aligning tracks inside container by distributing empty space */
+				justify-content: center;
+				align-content: center;
+
+				/* Aligning items inside cells */
+				align-items: center;
+				justify-items: center;
+			}
+
+			.el--3 {
+				align-self: end;
+				justify-self: end;
 			}
 		</style>
 	</head>
